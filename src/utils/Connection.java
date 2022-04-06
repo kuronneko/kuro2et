@@ -26,7 +26,7 @@ public class Connection {
    
     public boolean connect(){
         try{
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             String cadena = "jdbc:mysql://"+SERVER+":3306/"+DATABASE;
             this.connection = DriverManager.getConnection(cadena, USER, PASSWORD);
             return true;
