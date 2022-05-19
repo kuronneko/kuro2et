@@ -27,7 +27,11 @@ Simple algorithm to encrypt text, base on the hexadecimal system. This console a
     
 `3.` Set DB params at config.properties
 
-`4.` Compile and excecute
+`4.` Open Netbeans project
+
+`5.` Add mysql-connector
+
+`6.` Compile and execute
 
     java -jar kuro2et.jar
  
