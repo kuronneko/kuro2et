@@ -9,7 +9,10 @@ Simple algorithm to encrypt text, base on the hexadecimal system. This console a
 <p> <img src="https://github.com/kuronneko/kuro2et/blob/master/kuro2et.png" width="450"> </p>
 
 ### How to use
-`1.` JRE 8+ required
+`1.` Required
+
+    JRE 8
+    mysql-connector-java-8.0.27.jar
 
 `2.` Create a database
 
