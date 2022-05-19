@@ -21,8 +21,15 @@ Simple algorithm to encrypt text, base on the hexadecimal system. This console a
     `updated_at` timestamp NULL DEFAULT NULL,
      ADD PRIMARY KEY (`id`)
     );
+    
+`3.` Set DB params at config.properties
 
-`3.` Compile and excecute
+USER=root
+PASSWORD=
+SERVER=localhost
+DATABASE=kuro2et
+
+`4.` Compile and excecute
 
     java -jar kuro2et.jar
  
