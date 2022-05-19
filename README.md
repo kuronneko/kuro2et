@@ -3,7 +3,7 @@ Simple algorithm to encrypt text, base on the hexadecimal system. This console a
 
 * Algorithm written from scratch using raw JAVA
 * MySQL Database
-* Has a GUI Offiline Swing version https://github.com/kuronneko/Hex-to-String
+* Has a GUI Offline Swing version https://github.com/kuronneko/Hex-to-String
 
 
 ### Preview
