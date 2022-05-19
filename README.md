@@ -2,6 +2,7 @@
 Simple algorithm to encrypt text, base on the hexadecimal system. This console app works like Password Manager using the kuro algorithm to encrypt text and store it on a database.
 
 * Algorithm written from scratch using raw JAVA
+* MySQL Database
 * Has a GUI Offiline Swing version https://github.com/kuronneko/Hex-to-String
 
 
