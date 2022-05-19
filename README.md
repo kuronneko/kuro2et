@@ -24,11 +24,6 @@ Simple algorithm to encrypt text, base on the hexadecimal system. This console a
     
 `3.` Set DB params at config.properties
 
-USER=root
-PASSWORD=
-SERVER=localhost
-DATABASE=kuro2et
-
 `4.` Compile and excecute
 
     java -jar kuro2et.jar
