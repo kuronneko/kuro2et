@@ -1,5 +1,5 @@
 # Kuro2EncrypterTool
-Simple algorithm to encrypt text, base on the hexadecimal system. This console app works like Password Manager using the kuro algorithm to encrypt text and store it on a database.
+Simple algorithm for encrypting text, based on the hexadecimal system. This console application works as a password manager using the kuro algorithm to encrypt text and store it in a database.
 
 * Algorithm written from scratch using raw JAVA
 * MySQL Database
