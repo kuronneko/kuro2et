@@ -153,6 +153,9 @@ public class Kuro2et extends Connection {
                     System.out.println("+--------- You need to select a valid option -------------+");
                     System.out.println("+--------- Try again ! -----------------------------------+");
                 }
+            }else{
+                System.out.println("+--------- Wrong password ! ------------------------------+");
+                System.out.println("+--------- Try again ! -----------------------------------+");
             }
         } catch (Exception e) {
             System.out.println("Wrong password or invalid format => "+e.getMessage());
