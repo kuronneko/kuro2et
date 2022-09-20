@@ -3,6 +3,7 @@ import dao.Filek2etDAO;
 import dto.Filek2et;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.Console;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileReader;
@@ -34,9 +35,18 @@ public class Kuro2et extends Connection {
     public static void main(String[] args) {
 
         KuroEncrypterTool KuroEncrypterTool = new KuroEncrypterTool();
-        System.out.println("Password: ");
-        Scanner passwordRead = new Scanner(System.in);
-        String password = passwordRead.nextLine();
+        Console console = System.console();
+        String password = "";
+
+        if (console == null) {
+            System.out.println("Enter Password: ");
+            Scanner passwordRead = new Scanner(System.in);
+            password = passwordRead.nextLine();
+        } else {
+            System.out.println("Enter Password: ");
+            char[] pass = console.readPassword();
+            password = String.valueOf(pass);
+        }
 
         try {
             if (!password.isEmpty() && password.equals(KuroEncrypterTool.loadHexToString(getConfigParameters().getProperty("master")))) {
@@ -153,12 +163,12 @@ public class Kuro2et extends Connection {
                     System.out.println("+--------- You need to select a valid option -------------+");
                     System.out.println("+--------- Try again ! -----------------------------------+");
                 }
-            }else{
+            } else {
                 System.out.println("+--------- Wrong password ! ------------------------------+");
                 System.out.println("+--------- Try again ! -----------------------------------+");
             }
         } catch (Exception e) {
-            System.out.println("Wrong password or invalid format => "+e.getMessage());
+            System.out.println("Wrong password or invalid format => " + e.getMessage());
         }
 
     }
