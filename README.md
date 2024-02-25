@@ -5,7 +5,6 @@ Simple algorithm for encrypting text, based on the hexadecimal system. This cons
 ### Features:
 * Algorithm written from scratch using raw JAVA
 * MySQL Database
-* Has a GUI Offline Swing version https://github.com/kuronneko/Hex-to-String
 
 ### Technologies:
 JAVA 8, MySQL
